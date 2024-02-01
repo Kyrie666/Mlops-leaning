@@ -30,9 +30,10 @@ __learning about mlops to improve__
 3. degreed of automation
 - human only
 - shadow mode
-- **ai assistance**
-- **partial automation**
-- **full automation**
+- [*] **ai assistance**
+- [*] **partial automation**
+- [*] **full automation**
+
 
 4. monitor dashboard
 - input metrics
