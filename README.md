@@ -1,2 +1,3 @@
-# Mlops-leaning
-learning about mlops 
+# llm-universe
+learn to constuct llm app
+##
