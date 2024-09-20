@@ -1,2 +1,2 @@
-# Mlops-leaning
-learning about mlops 
+# langchain llm knowlauge
+about some langchain code for llm
