@@ -59,3 +59,9 @@
     - [HumanMessage-AImessage] # invoke
     - [HumanMessage-AImessage-ToolMessage] # tool 调用
     - AIMessage # 最后的回答
+
+
+
+## llm compiler框架：
+1. 没有添加agent的选项吗？？？——看下源代码
+2. 找到了plan不成功的原因：没有为工具添加合适的description——找下合适的写法；
