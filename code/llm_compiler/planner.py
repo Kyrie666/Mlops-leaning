@@ -1,5 +1,5 @@
 from typing import Sequence
-
+import os
 from langchain import hub
 from langchain_core.language_models import BaseChatModel
 from langchain_core.messages import (
@@ -75,10 +75,10 @@ def create_planner(
 
 
 from model import get_model
-from tools.math_tools import get_math_tool
-from tools.sql_tools import get_sql_agent_tool
-from tools.python_tools import get_python_tool
+from tools.define_tools import get_tools
+from langchain_community.utilities.sql_database import SQLDatabase
 
-tools = [a, b, call_google_search]
-model = get_model()
-planner = create_planner(model, tools, prompt)
+llm = get_model()
+db = SQLDatabase.from_uri(os.environ("SQLITE_DATABASE_URL"))
+tools = get_tools(llm, db=db)
+planner = create_planner(llm, tools, prompt)
